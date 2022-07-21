@@ -1,7 +1,7 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
-  // base: '/doge/',
+  base: '/doge/',
   title: '小伙子别冲了',
   description: 'docs',
   head: [
