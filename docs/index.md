@@ -1,20 +1,20 @@
 ---
 layout: home
 
-title: VitePress
-titleTemplate: Vite & Vue Powered Static Site Generator
-
 hero:
-  name: VitePress
-  text: Vite & Vue Powered Static Site Generator
+  name: Vue天下第一
+  text: 这是一个用VitePress写的文档
   tagline: Simple, powerful, and performant. Meet the modern SSG framework you've always wanted.
   actions:
     - theme: brand
-      text: Get Started
+      text: 阅读
       link: /guide/getting-started
     - theme: alt
-      text: View on GitHub
-      link: https://github.com/vuejs/vitepress
+      text: 古诗欣赏
+      link: /poetries/p1
+    - theme: alt
+      text: 去github看源码
+      link: https://github.com/BombCowpat/doge
 
 features:
   - title: "Vite: The DX that can't be beat"
