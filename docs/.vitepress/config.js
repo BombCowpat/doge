@@ -1,42 +1,21 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
-  base: '/doge/',
+  // base: '/doge/',
   title: 'VitePress',
   description: 'docs',
   lastUpdated: true,
   themeConfig: {
     nav: [
       { text: 'home', link: '/' },
-      { text: 'start', link: '/getting-started' },
-      {
-        text: 'Dropdown Menu',
-        items: [
-          { text: 'Item A', link: '/item-1' },
-          { text: 'Item B', link: '/item-2' },
-          { text: 'Item C', link: '/item-3' },
-        ],
-      },
-      {
-        text: 'Dropdown Menu',
-        items: [
-          {
-            // Title for the section.
-            text: 'Section A Title',
-            items: [
-              { text: 'Section A Item A', link: '...' },
-              { text: 'Section B Item B', link: '...' },
-            ],
-          },
-        ],
-      },
+      { text: 'start', link: '/guide/getting-started' }
     ],
     sidebar: [
       {
         text: 'Guide',
         items: [
           { text: 'Introduction', link: '/' },
-          { text: 'Getting Started', link: '/getting-started' },
+          { text: 'Getting Started', link: '/guide/getting-started' },
         ]
       }
     ],
