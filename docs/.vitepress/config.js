@@ -1,9 +1,9 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
-  base: '/doge/',
-  title: '小伙子别冲了',
-  description: 'docs',
+  // base: '/doge/',
+  title: '炸牛屎来不来',
+  description: '炸牛屎来不来，陈雁飞的文档',
   head: [
     ['link', { rel: 'icon', href: '/favicon.ico' }]
   ],
@@ -19,7 +19,8 @@ export default defineConfig({
         text: 'Guide',
         items: [
           { text: '阅读', link: '/guide/getting-started' },
-          { text: '青玉案·元夕', link: '/poetries/p1'}
+          { text: '青玉案·元夕', link: '/poetries/p1'},
+          { text: 'Webpack搭建Vue项目', link: '/blogs/b1'}
         ]
       }
     ],
