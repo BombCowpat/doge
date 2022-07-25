@@ -1,7 +1,7 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
-  // base: '/doge/',
+  base: '/doge/',
   title: '炸牛屎来不来',
   description: '炸牛屎来不来，陈雁飞的文档',
   head: [
