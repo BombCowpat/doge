@@ -20,7 +20,8 @@ export default defineConfig({
         items: [
           { text: '阅读', link: '/guide/getting-started' },
           { text: '青玉案·元夕', link: '/poetries/p1'},
-          { text: 'Webpack搭建Vue项目', link: '/blogs/b1'}
+          { text: 'Webpack搭建Vue项目', link: '/blogs/b1'},
+          { text: '代码规范', link: 'blogs/b2'}
         ]
       }
     ],
