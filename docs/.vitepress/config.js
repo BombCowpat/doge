@@ -5,9 +5,10 @@ export default defineConfig({
   title: '炸牛屎来不来',
   description: '炸牛屎来不来，陈雁飞的文档',
   head: [
-    ['link', { rel: 'icon', href: '/favicon.ico' }],
+    ['link', { rel: 'icon', href: '/doge/favicon.ico' }],
     ['link', { rel: 'stylesheet', href: 'https://fastly.jsdelivr.net/npm/@fortawesome/fontawesome-free@6/css/all.min.css' }],
-    ['script', { src: '/live2d-widget/autoload.js' }],
+    ['script', { src: '/doge/live2d-widget/autoload.js' }],
+    // ['script', { src: '/live2d-widget/autoload.js' }],
   ],
   lastUpdated: true,
   themeConfig: {
