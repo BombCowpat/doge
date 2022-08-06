@@ -6,6 +6,7 @@
   import * as THREE from 'three'
   import { StereoEffect } from '../js/StereoEffect.js'
   import { ref, onMounted } from 'vue'
+  import { withBase } from 'vitepress'
   const container = ref(null)
   onMounted(() => {
     let camera, scene, renderer, effect
@@ -23,11 +24,11 @@
       camera.position.z = 3200
 
       scene = new THREE.Scene()
-      scene.background = new THREE.CubeTextureLoader().setPath('../../doge/assets/img/').load(['px.jpg', 'nx.jpg', 'py.jpg', 'ny.jpg', 'pz.jpg', 'nz.jpg'])
+      scene.background = new THREE.CubeTextureLoader().setPath('../..' + withBase('/img/')).load(['px.jpg', 'nx.jpg', 'py.jpg', 'ny.jpg', 'pz.jpg', 'nz.jpg'])
 
       const geometry = new THREE.SphereGeometry(100, 32, 16)
 
-      const textureCube = new THREE.CubeTextureLoader().setPath('../../doge/assets/img/').load(['px.jpg', 'nx.jpg', 'py.jpg', 'ny.jpg', 'pz.jpg', 'nz.jpg'])
+      const textureCube = new THREE.CubeTextureLoader().setPath('../..' + withBase('/img/')).load(['px.jpg', 'nx.jpg', 'py.jpg', 'ny.jpg', 'pz.jpg', 'nz.jpg'])
       textureCube.mapping = THREE.CubeRefractionMapping
 
       const material = new THREE.MeshBasicMaterial({ color: 0xffffff, envMap: textureCube, refractionRatio: 0.95 })
