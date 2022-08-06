@@ -25,6 +25,7 @@ export default defineConfig({
           { text: '青玉案·元夕', link: '/poetries/p1' },
           { text: 'Webpack搭建Vue项目', link: '/blogs/b1' },
           { text: '代码规范', link: 'blogs/b2' },
+          { text: 'three.js 案例', link: 'blogs/b3' },
         ],
       },
     ],

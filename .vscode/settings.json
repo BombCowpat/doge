@@ -1,0 +1,19 @@
+{
+  "eslint.enable": true, // 开启或者关闭ESlint，如果不喜欢红色大波浪，直接false就行了
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode" // 使用prettier对js进行格式化
+  },
+  "[vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode" // 使用prettier对vue组件进行格式化
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true // ESlint插件格式化开关，不受Formatting Toggle影响
+  },
+  "eslint.alwaysShowStatus": true, // 是否在VsCode底部显示ESlint
+  // 下面的配置二选一，安装了Formatting Toggle就选第一个
+  "formattingToggle.affects": ["editor.formatOnPaste", "editor.formatOnSave", "editor.formatOnType"] // 开启/关闭Prettier格式化
+  // 或者使用如下配置强制关闭或者开启Prettier自动格式化
+  // "editor.formatOnSave": false,
+  // "editor.formatOnPaste": false,
+  // "editor.formatOnType": false
+}
