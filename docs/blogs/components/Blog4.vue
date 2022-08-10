@@ -22,35 +22,42 @@
   const fileInput = ref(null)
   const loading = ref(true)
   onMounted(() => {
-    const scriptCV = document.createElement('script')
-    scriptCV.src = withBase('/opencv.js')
-    blog4.value.appendChild(scriptCV)
-    scriptCV.addEventListener('load', () => {
-      loading.value = false
-      const imgElement = imageSrc.value
-      const inputElement = fileInput.value
-      inputElement.addEventListener(
-        'change',
-        (e) => {
-          imgElement.src = URL.createObjectURL(e.target.files[0])
-        },
-        false
-      )
-      imgElement.onload = function () {
-        let src = cv.imread(imgElement)
-        let dst = new cv.Mat()
-        cv.cvtColor(src, src, cv.COLOR_RGBA2GRAY, 0)
-        // You can try more different parameters
-        cv.adaptiveThreshold(src, dst, 200, cv.ADAPTIVE_THRESH_GAUSSIAN_C, cv.THRESH_BINARY, 3, 2)
-        cv.imshow('canvasOutput', dst)
-        src.delete()
-        dst.delete()
-      }
-      setTimeout(() => {
-        imgElement.src = withBase('/img/ars.jpg')
-      }, 1000)
-    })
+    if (window.cv) {
+      initEvents()
+    } else {
+      const scriptCV = document.createElement('script')
+      scriptCV.src = withBase('/opencv.js')
+      blog4.value.appendChild(scriptCV)
+      scriptCV.addEventListener('load', () => {
+        initEvents()
+      })
+    }
   })
+  function initEvents() {
+    const imgElement = imageSrc.value
+    const inputElement = fileInput.value
+    inputElement.addEventListener(
+      'change',
+      (e) => {
+        imgElement.src = URL.createObjectURL(e.target.files[0])
+      },
+      false
+    )
+    imgElement.onload = function () {
+      let src = cv.imread(imgElement)
+      let dst = new cv.Mat()
+      cv.cvtColor(src, src, cv.COLOR_RGBA2GRAY, 0)
+      // You can try more different parameters
+      cv.adaptiveThreshold(src, dst, 200, cv.ADAPTIVE_THRESH_GAUSSIAN_C, cv.THRESH_BINARY, 3, 2)
+      cv.imshow('canvasOutput', dst)
+      src.delete()
+      dst.delete()
+    }
+    setTimeout(() => {
+      imgElement.src = withBase('/img/ars.jpg')
+      loading.value = false
+    }, 1000)
+  }
 </script>
 
 <style lang="scss" scoped>
