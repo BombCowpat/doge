@@ -12,17 +12,14 @@ export default defineConfig({
   ],
   lastUpdated: true,
   themeConfig: {
-    nav: [
-      { text: '首页', link: '/' },
-      { text: '阅读', link: '/guide/getting-started' },
-      { text: '青玉案·元夕', link: '/poetries/p1' }
-    ],
+    nav: [{ text: '首页', link: '/' }],
     sidebar: [
       {
         text: 'Guide',
         items: [
           { text: '阅读', link: '/guide/getting-started' },
           { text: '青玉案·元夕', link: '/poetries/p1' },
+          { text: '沁园春·雪', link: '/poetries/p2' },
           { text: 'Webpack搭建Vue项目', link: '/blogs/b1' },
           { text: '代码规范', link: 'blogs/b2' },
           { text: 'three.js 案例', link: 'blogs/b3' },
