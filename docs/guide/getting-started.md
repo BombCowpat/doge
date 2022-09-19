@@ -1,3 +1,3 @@
 # 阅读指南
-## 先看个妞吧
+## 图片使用
 ![An image](../assets/img/ars.jpg)
