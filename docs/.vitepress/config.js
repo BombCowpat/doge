@@ -2,7 +2,7 @@ import { defineConfig } from 'vitepress'
 
 export default defineConfig({
   // base: '/doge/',
-  title: 'ChenYanfei',
+  title: 'Home',
   description: 'ChenYanfei的文档',
   head: [
     ['link', { rel: 'icon', href: '/doge/favicon.ico' }],
@@ -15,7 +15,109 @@ export default defineConfig({
     nav: [{ text: '首页', link: '/' }],
     sidebar: [
       {
-        text: '无题',
+        text: 'HTML',
+        collapsible: true,
+        collapsed: true,
+        items: [
+          {
+            text: 'W3C',
+            link: ''
+          }
+        ]
+      },
+      {
+        text: 'CSS',
+        collapsible: true,
+        collapsed: true,
+        items: [
+          {
+            text: 'W3C',
+            link: ''
+          }
+        ]
+      },
+      {
+        text: 'JavaScript',
+        collapsible: true,
+        collapsed: true,
+        items: [
+          {
+            text: 'W3C',
+            link: ''
+          }
+        ]
+      },
+      {
+        text: '前端框架',
+        collapsible: true,
+        collapsed: true,
+        items: [
+          {
+            text: 'vue2',
+            collapsible: true,
+            collapsed: true,
+            items: [
+              {
+                text: 'vue',
+                collapsible: true,
+                collapsed: true,
+                items: [
+                  { text: '构造函数', link: '/vue2/constructor.md' },
+                  { text: '响应式系统', link: '/vue2/responsive-system.md' },
+                  { text: '渲染器', link: '/vue2/renderer.md' },
+                  { text: '编译器', link: '/vue2/compiler.md' }
+                ]
+              },
+              { text: 'vue-router', link: '' },
+              { text: 'vuex', link: '' },
+              { text: 'vue-cli', link: '' },
+              { text: 'vue ssr', link: '' }
+            ]
+          },
+          {
+            text: 'vue3',
+            collapsible: true,
+            collapsed: true,
+            items: [
+              { text: 'vue', link: '' },
+              { text: 'vue-router', link: '' },
+              { text: 'pinia', link: '' },
+              { text: 'vuex', link: '' },
+              { text: 'vue-cli', link: '' },
+              { text: 'vue ssr', link: '' }
+            ]
+          },
+          {
+            text: 'react',
+            collapsible: true,
+            collapsed: true,
+            items: [{ text: 'react基础', link: '/react/react-base.md' }]
+          }
+        ]
+      },
+      {
+        text: 'Rendering Frameworks',
+        collapsible: true,
+        collapsed: true,
+        items: []
+      },
+      {
+        text: '构建工具',
+        collapsible: true,
+        collapsed: true,
+        items: [
+          { text: 'webpack', link: '' },
+          { text: 'vite', link: '' }
+        ]
+      },
+      {
+        text: '常用库',
+        collapsible: true,
+        collapsed: true,
+        items: []
+      },
+      {
+        text: '其他',
         collapsible: true,
         collapsed: true,
         items: [
@@ -26,17 +128,6 @@ export default defineConfig({
           { text: '代码规范', link: 'blogs/b2' },
           { text: 'three.js 案例', link: 'blogs/b3' },
           { text: 'OpenCV', link: 'blogs/b4' }
-        ]
-      },
-      {
-        text: 'vue2',
-        collapsible: true,
-        collapsed: true,
-        items: [
-          { text: '构造函数', link: '/vue2/constructor.md' },
-          { text: '响应式系统', link: '/vue2/responsive-system.md' },
-          { text: '渲染器', link: '/vue2/renderer.md' },
-          { text: '编译器', link: '/vue2/compiler.md' }
         ]
       }
     ],

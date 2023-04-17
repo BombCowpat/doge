@@ -75,14 +75,7 @@ function baseCompile (template, options) {
 export function parse (template, options) {
   let root
   parseHTML(template, {
-    warn,
-    expectHTML: options.expectHTML,
-    isUnaryTag: options.isUnaryTag,
-    canBeLeftOpenTag: options.canBeLeftOpenTag,
-    shouldDecodeNewlines: options.shouldDecodeNewlines,
-    shouldDecodeNewlinesForHref: options.shouldDecodeNewlinesForHref,
-    shouldKeepComment: options.comments,
-    outputSourceRange: options.outputSourceRange,
+    // ...
     start (tag, attrs, unary, start, end) {},
     end (tag, start, end) {},
     chars (text: string, start: number, end: number) {},
@@ -105,4 +98,13 @@ export function parseHTML (html, options) {
   }
 }
 ```
-3. 编不下去了，硬啃`parseHTML`就完事儿了
+3. `parseHTML`通过读取字符流`template`配合正则一点一点的解析字符串（词法分析）,每当遇到一个特定的 `token` 时都会调用相应的钩子函数（句法分析）
+```js
+parseHTML(template, {
+    // ...
+    start (tag, attrs, unary, start, end) {}, // 开始标签
+    end (tag, start, end) {}, // 结束标签
+    chars (text: string, start: number, end: number) {}, // 文本内容
+    comment (text: string, start, end) {} // 注释节点
+  })
+```
