@@ -14,6 +14,7 @@ export default defineConfig({
   themeConfig: {
     nav: [{ text: '首页', link: '/' }],
     sidebar: [
+      { text: '开始', link: '/guide/getting-started' },
       {
         text: 'HTML',
         collapsible: true,
@@ -71,7 +72,8 @@ export default defineConfig({
               { text: 'vue-router', link: '' },
               { text: 'vuex', link: '' },
               { text: 'vue-cli', link: '' },
-              { text: 'vue ssr', link: '' }
+              { text: 'vue ssr', link: '' },
+              { text: '组件库', link: '' }
             ]
           },
           {
@@ -96,10 +98,13 @@ export default defineConfig({
         ]
       },
       {
-        text: 'Rendering Frameworks',
+        text: '渲染框架',
         collapsible: true,
         collapsed: true,
-        items: []
+        items: [
+          { text: 'Nuxt', link: '' },
+          { text: 'Next', link: '' }
+        ]
       },
       {
         text: '构建工具',
@@ -111,7 +116,105 @@ export default defineConfig({
         ]
       },
       {
+        text: '微信',
+        collapsible: true,
+        collapsed: true,
+        items: [
+          { text: '公众号', link: '' },
+          { text: '小程序', link: '' },
+          { text: '开放平台', link: '' },
+          { text: '微信支付', link: '' }
+        ]
+      },
+      {
+        text: 'uniapp',
+        collapsible: true,
+        collapsed: true,
+        items: []
+      },
+      {
+        text: 'Node.js',
+        collapsible: true,
+        collapsed: true,
+        items: []
+      },
+      {
+        text: 'Node.js 服务框架',
+        collapsible: true,
+        collapsed: true,
+        items: [
+          { text: 'Express', link: '' },
+          { text: 'Koa', link: '' },
+          { text: 'Nest', link: '' },
+          { text: 'Strapi', link: '' }
+        ]
+      },
+      {
         text: '常用库',
+        collapsible: true,
+        collapsed: true,
+        items: [{ text: 'throttle-debounce', link: '' }]
+      },
+      {
+        text: '学习网站',
+        collapsible: true,
+        collapsed: true,
+        items: [
+          { text: 'MDN', link: 'https://developer.mozilla.org/zh-CN/docs/MDN/Community/Contributing/Getting_started' },
+          { text: 'npm', link: '' },
+          { text: 'github', link: '' }
+        ]
+      },
+      {
+        text: 'Java',
+        collapsible: true,
+        collapsed: true,
+        items: []
+      },
+      {
+        text: 'Dart',
+        collapsible: true,
+        collapsed: true,
+        items: []
+      },
+      {
+        text: 'Futter',
+        collapsible: true,
+        collapsed: true,
+        items: []
+      },
+      {
+        text: 'Android',
+        collapsible: true,
+        collapsed: true,
+        items: []
+      },
+      {
+        text: 'IOS',
+        collapsible: true,
+        collapsed: true,
+        items: []
+      },
+      {
+        text: '计算机组成原理',
+        collapsible: true,
+        collapsed: true,
+        items: []
+      },
+      {
+        text: '操作系统',
+        collapsible: true,
+        collapsed: true,
+        items: []
+      },
+      {
+        text: '数据结构',
+        collapsible: true,
+        collapsed: true,
+        items: []
+      },
+      {
+        text: '计算机网络',
         collapsible: true,
         collapsed: true,
         items: []
@@ -121,7 +224,6 @@ export default defineConfig({
         collapsible: true,
         collapsed: true,
         items: [
-          { text: '图片展示', link: '/guide/getting-started' },
           { text: '青玉案·元夕', link: '/poetries/p1' },
           { text: '沁园春·雪', link: '/poetries/p2' },
           { text: '三体语录', link: '/blogs/b1' },

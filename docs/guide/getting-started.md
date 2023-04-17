@@ -1,3 +1,3 @@
 # 阅读指南
-## 图片使用
+## 爱丽丝
 ![An image](../assets/img/ars.jpg)
