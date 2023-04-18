@@ -94,6 +94,14 @@ export default defineConfig({
             collapsible: true,
             collapsed: true,
             items: [{ text: 'react基础', link: '/react/react-base.md' }]
+          },
+          {
+            text: 'Svelte',
+            link: 'https://www.svelte.cn/'
+          },
+          {
+            text: 'Solid',
+            link: 'https://www.solidjs.com/'
           }
         ]
       },
@@ -103,7 +111,9 @@ export default defineConfig({
         collapsed: true,
         items: [
           { text: 'Nuxt', link: '' },
-          { text: 'Next', link: '' }
+          { text: 'Next', link: '' },
+          { text: 'Remix', link: '' },
+          { text: 'Gatsby', link: '' }
         ]
       },
       {
@@ -113,6 +123,25 @@ export default defineConfig({
         items: [
           { text: 'webpack', link: '' },
           { text: 'vite', link: '' }
+        ]
+      },
+      {
+        text: '移动端和客户端',
+        collapsible: true,
+        collapsed: true,
+        items: [
+          { text: 'Electron', link: '' },
+          { text: 'Tauri', link: '' }
+        ]
+      },
+      {
+        text: 'web图形',
+        collapsible: true,
+        collapsed: true,
+        items: [
+          { text: 'three.js', link: '' },
+          { text: 'webgl', link: '' },
+          { text: 'webgpu', link: '' }
         ]
       },
       {
@@ -162,7 +191,8 @@ export default defineConfig({
         items: [
           { text: 'MDN', link: 'https://developer.mozilla.org/zh-CN/docs/MDN/Community/Contributing/Getting_started' },
           { text: 'npm', link: '' },
-          { text: 'github', link: '' }
+          { text: 'github', link: '' },
+          { text: 'state of js', link: 'https://2022.stateofjs.com/zh-Hans/' }
         ]
       },
       {
