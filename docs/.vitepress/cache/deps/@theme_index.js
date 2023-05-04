@@ -1,3 +1,5 @@
+import "./chunk-JC4IRQUL.js";
+
 // node_modules/vitepress/dist/client/theme-default/index.js
 import "/Users/cyf/Desktop/projects/doge/node_modules/vitepress/dist/client/theme-default/styles/fonts.css";
 

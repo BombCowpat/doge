@@ -47,6 +47,10 @@ export default defineConfig({
           {
             text: 'W3C',
             link: ''
+          },
+          {
+            text: 'unocss',
+            link: 'https://unocss.dev/'
           }
         ]
       },
@@ -148,7 +152,7 @@ export default defineConfig({
         collapsed: true,
         items: [
           { text: 'Electron', link: '' },
-          { text: 'Tauri', link: '' }
+          { text: 'Tauri', link: 'https://tauri.app/zh-cn/' }
         ]
       },
       {
@@ -156,9 +160,9 @@ export default defineConfig({
         collapsible: true,
         collapsed: true,
         items: [
-          { text: 'three.js', link: '' },
-          { text: 'webgl', link: '' },
-          { text: 'webgpu', link: '' }
+          { text: 'three.js', link: '/web_graphic/three.md' },
+          { text: 'webgl', link: '/web_graphic/webgl.md' },
+          { text: 'webgpu', link: '/web_graphic/webgpu.md' }
         ]
       },
       {
@@ -269,6 +273,40 @@ export default defineConfig({
         collapsible: true,
         collapsed: true,
         items: []
+      },
+      {
+        text: '数据库',
+        collapsible: true,
+        collapsed: true,
+        items: [
+          {
+            text: 'mysql',
+            link: 'https://dev.mysql.com/doc/refman/5.7/en/'
+          }
+        ]
+      },
+      {
+        text: '游戏引擎',
+        collapsible: true,
+        collapsed: true,
+        items: [
+          {
+            text: 'FXGL',
+            link: 'https://github.com/AlmasB/FXGL'
+          },
+          {
+            text: 'Pixel',
+            link: 'https://github.com/faiface/pixel'
+          },
+          {
+            text: 'Eva.js',
+            link: 'https://eva-engine.gitee.io/'
+          },
+          {
+            text: 'Cocos2d-x',
+            link: 'https://docs.cocos.com/cocos2d-x/manual/zh/'
+          }
+        ]
       }
     ],
     socialLinks: [{ icon: 'github', link: 'https://github.com/BombCowpat/doge' }],
