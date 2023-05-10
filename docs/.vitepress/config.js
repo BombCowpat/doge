@@ -156,16 +156,6 @@ export default defineConfig({
         ]
       },
       {
-        text: 'web图形',
-        collapsible: true,
-        collapsed: true,
-        items: [
-          { text: 'three.js', link: '/web_graphic/three.md' },
-          { text: 'webgl', link: '/web_graphic/webgl.md' },
-          { text: 'webgpu', link: '/web_graphic/webgpu.md' }
-        ]
-      },
-      {
         text: '微信',
         collapsible: true,
         collapsed: true,
@@ -227,6 +217,18 @@ export default defineConfig({
         items: []
       },
       {
+        text: 'C',
+        collapsible: true,
+        collapsed: true,
+        items: []
+      },
+      {
+        text: 'C++',
+        collapsible: true,
+        collapsed: true,
+        items: []
+      },
+      {
         text: 'Dart',
         collapsible: true,
         collapsed: true,
@@ -275,6 +277,27 @@ export default defineConfig({
         items: []
       },
       {
+        text: '计算机图形学',
+        collapsible: true,
+        collapsed: true,
+        items: [
+          {
+            text: '概述',
+            link: '/graphic/overview.md'
+          },
+          {
+            text: 'web图形',
+            collapsible: true,
+            collapsed: true,
+            items: [
+              { text: 'three.js', link: '/web_graphic/three.md' },
+              { text: 'webgl', link: '/web_graphic/webgl.md' },
+              { text: 'webgpu', link: '/web_graphic/webgpu.md' }
+            ]
+          },
+        ]
+      },
+      {
         text: '数据库',
         collapsible: true,
         collapsed: true,
@@ -305,6 +328,25 @@ export default defineConfig({
           {
             text: 'Cocos2d-x',
             link: 'https://docs.cocos.com/cocos2d-x/manual/zh/'
+          }
+        ]
+      },
+      {
+        text: '嵌入式',
+        collapsed: true,
+        collapsible: true,
+        items: [
+          {
+            text: 'c51',
+            link: ''
+          },
+          {
+            text: 'stm32',
+            link: ''
+          },
+          {
+            text: 'arm',
+            link: ''
           }
         ]
       }
