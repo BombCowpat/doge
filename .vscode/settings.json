@@ -7,7 +7,7 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode" // 使用prettier对vue组件进行格式化
   },
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true // ESlint插件格式化开关，不受Formatting Toggle影响
+    "source.fixAll.eslint": "explicit"
   },
   "eslint.alwaysShowStatus": true, // 是否在VsCode底部显示ESlint
   // 下面的配置二选一，安装了Formatting Toggle就选第一个

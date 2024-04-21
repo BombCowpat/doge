@@ -220,7 +220,12 @@ export default defineConfig({
         text: 'C',
         collapsible: true,
         collapsed: true,
-        items: []
+        items: [
+          {
+            text: '阮一峰C语言教程',
+            link: 'https://wangdoc.com/clang/'
+          }
+        ]
       },
       {
         text: 'C++',
@@ -292,7 +297,10 @@ export default defineConfig({
             items: [
               { text: 'three.js', link: '/web_graphic/three.md' },
               { text: 'webgl', link: '/web_graphic/webgl.md' },
-              { text: 'webgpu', link: '/web_graphic/webgpu.md' }
+              { text: 'webgpu', link: '/web_graphic/webgpu.md' },
+              { text: 'vulkan', link: 'https://vulkan-tutorial.com/'},
+              { text: 'Metal', link: 'https://developer.apple.com/cn/metal/'},
+              { text: 'DirectX', link: 'https://learn.microsoft.com/zh-cn/windows/win32/directx' }
             ]
           },
         ]
